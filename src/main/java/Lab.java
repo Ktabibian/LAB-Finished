@@ -14,6 +14,11 @@ public class Lab {
         String name;
         System.out.println("Please type your name.");
         name = in.next();
-        System.out.println(personCheck(name));
+        //System.out.println(personCheck(name));
+        while(!(name.equals("Alice")) && !(name.equals("Bob"))){
+            System.out.println("What is your name?");
+            name = in.next();
+        }
+        System.out.println("Hello, " + name);
     }
 }
